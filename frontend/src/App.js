@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Profile from "./Pages/Profile";
+
 import Home from "./Pages/Home";
 import QA from "./Pages/QA";
 import TC from "./Pages/TC";
@@ -13,6 +16,7 @@ function App() {
          <Route path="/QA" element={<QA/>} />
         <Route path="/TC" element={<TC/>} /> 
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </Router>
   );
